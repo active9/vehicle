@@ -1,0 +1,14 @@
+#!/usr/bin/env node
+'use strict';
+
+var cli = require('../lib/cli');
+
+if ((process.env.NODE_ENV!="development") & (process.env.NODE_ENV!="production") & (process.env.NODE_ENV!="test")) {
+  console.log("Error: Invalid NODE_ENV setting found ("+ process.env.NODE_ENV +").");
+  console.log("The NODE_ENV variable must be set to development or production mode.")
+  process.exit(1);
+}
+
+var program = require('../lib/program');
+
+cli(program);

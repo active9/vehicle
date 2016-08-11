@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vehicle</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/assets/css/app.css" />
+  </head>
+<body>
+
+<div class="wrapper">
+Welcome To <{VEHICLE}>
+
+<h1 id="vehicle">
+  VEHICLE
+</h1>
+<div class="vehicle-animation"><img src="/assets/Vehicle.png" width="64"/></div>
+<hr />
+<p>
+  Vehicle is an ORM MVC DRS with REST on Express. Designed for real time 
+responsive applications: Vehicle follows a paradigm similar to the classic MVC pattern 
+(models, views, and controllers). However, it expands to include drivers, routes, 
+and strategies to help build SaaS applications quickly using ORM and CRUD.
+</p>
+<h1 id="requirements">
+  GETTING STARTED
+</h1>
+<p>
+  Vehicle comes with an easy to use app generator. To get started open
+  your console at and type in vehicle then press enter.
+</p>
+<h1 id="examples">
+  EXAMPLES
+</h1>
+<p>
+  This vehicle test app comes with a few examples:
+  <ul>
+    <li><a href="/hello_world">/hello_world</a> - the most enthusiastic of examples ./controllers/hello_world.js</li>
+    <li><a href="/test">/test</a> - loads the test controller from ./controller/test.js</li>
+    <li><a href="/api">/api</a> - access the waterline CRUD api from ./controller/api.js</li>
+    <li><a href="/api/users">/api/users</a> - access the users model from ./models/User.js via the driver ./drivers/User.js in Driver mode</li>
+    <li><a href="/api/pets">/api/pets</a> - inaccessable pets model from ./models/Pet.js via the driver ./drivers/Pets.js in Passenger mode</li>
+    <li><a href="/template">/template</a> - the page you see here from ./controllers/template.js</li>
+  </ul>
+</p>
+
+<h1 id="developers">
+  DEVELOPERS
+</h1>
+<p>
+  Vehicle is easy to learn and intuitive. If you already have an understand of the Model View Controller
+  <br>
+  paradigm and have had experience with nodejs we suggest you git clone the repo and check out
+  <br>
+  the app folders or generate a new vehicle app using the vehicle command prompt. Open said
+  <br>
+  app folder in your favorite file explorer. You will notice a very simple set of folders and
+  <br>
+  familiar files such as package.json and index.js. To get started open index.js.
+</p>
+<p>
+  Vehicle uses the following application folder structure:
+</p>
+<p>
+  ./api - Used to store api keys
+  <br>
+  ./assets - JS, CSS, Image assets
+  <br>
+  ./configs - Vehicle configurations
+  <br>
+  ./controllers - Controllers
+  <br>
+  ./drivers - Drivers
+  <br>
+  ./logs - Log directory for application level logging
+  <br>
+  ./models - Models
+  <br>
+  ./routes - Routes
+  <br>
+  ./strategies - Strategies
+  <br>
+  ./views - Application View Templates
+</p>
+<h1 id="editing">
+  EDITING
+</h1>
+<p>
+  The core of your application will run from index.js within your app directory. This file
+  <br />
+  contains the main code operations for vehicle to run your app. Vehicle uses an optional
+  <br />
+  paradigm setup which allows you to pick and choose how your application modules respond
+  <br />
+  and interact with the vehicle core MVC. By default your app requires a folder named routes
+  <br />
+  and a file named wheel.js within. This file passes controller request route definitions to
+  <br />
+  controllers. Controllers can then optionally export data results back to vehicles view for output.
+</p>
+<p>
+  Models within vehicle also auto generate api access via CRUD. Models can be accessed by their
+  <br />
+  drivers designation. The driver in return loads the model collection and either returns data as
+  <br />
+  a driver or keeps to itself for processing as a passenger. Passenger data can not be accessed via
+  <br />
+  the /api route like driver data is. In Driver mode data is public and returned to the vehicle api
+  <br />
+  for CRUD consumption.
+</p>
+</div>
+</body>
+<html>

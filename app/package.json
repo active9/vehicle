@@ -1,0 +1,18 @@
+{
+  "name": "VehicleTestApp",
+  "version": "0.0.1",
+  "description": "Vehicle - Test Application",
+  "main": "index.js",
+  "private": true,
+  "keywords": [
+    "vehicle",
+    "application",
+    "example"
+  ],
+  "author": "Active 9 LLC",
+  "license": "MIT",
+  "dependencies": {
+    "vehicle": "*",
+    "passport-local": "*"
+  }
+}

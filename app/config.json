@@ -1,0 +1,46 @@
+{
+	"name": "Vehicle Test App",
+	"description": "A Simple Vehicle ORMMVC Application",
+	"version": "1.0",
+	"app": [
+		"config.json",
+		"index.js"
+	],
+	"assets": {
+		"js": [
+			"vinegar"
+		]
+	},
+	"configs": [
+		"compression",
+		"config",
+		"log",
+		"orm",
+		"rest",
+		"session",
+		"weiv"
+	],
+	"registry": [
+		"example.js"
+	],
+	"drivers": [
+		"Pet.js",
+		"User.js"
+	],
+	"models": [
+		"Pet.js",
+		"User.js"
+	],
+	"views": [
+		"index.html"
+	],
+	"controllers": [
+		"api.js",
+		"hello_world.js",
+		"template.js",
+		"test.js"
+	],
+	"routes": [
+		"wheel.js"
+	]
+}

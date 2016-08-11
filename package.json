@@ -1,0 +1,88 @@
+{
+  "name": "Vehicle",
+  "conical": "Tin Lizzie",
+  "version": "0.1.0",
+  "description": "ORM MVC with REST on Express",
+  "main": "server.js",
+  "bin": {
+    "vehicle": "vehicle"
+  },
+  "private": true,
+  "scripts": {
+    "start": "node bin/vehicle",
+    "dev": "node bin/vehicle dev",
+    "debug": "node debug bin/vehicle",
+    "test": "node bin/vehicle test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/active9/vehicle"
+  },
+  "keywords": [
+    "vehicle",
+    "mvc",
+    "www",
+    "express",
+    "web",
+    "server",
+    "waterline"
+  ],
+  "author": "Active 9 LLC.",
+  "license": "MIT",
+  "devDependencies": {
+    "b-l-a-h": "*",
+    "superagent": "^2.0.0",
+    "supertest": "^1.1.0"
+  },
+  "dependencies": {
+    "above": "^0.0.2",
+    "apikey": "^0.1.2",
+    "ascii-art": "^1.0.3",
+    "body-parser": "*",
+    "buffer-equal-constant-time": "^1.0.1",
+    "check-update": "*",
+    "cli-color": "*",
+    "cli-spinner": "*",
+    "commander": "*",
+    "compression": "*",
+    "cors": "*",
+    "events": "^1.1.1",
+    "express": "*",
+    "express-cluster": "*",
+    "express-route-controller": "*",
+    "express-session": "*",
+    "fstream": "*",
+    "gas": "0.0.5",
+    "glob": "^7.0.5",
+    "headlight": "*",
+    "hind": "*",
+    "jslint": "^0.10.1",
+    "keep-alive": "*",
+    "lodash": "*",
+    "merge": "^1.2.0",
+    "method-override": "*",
+    "morgan": "*",
+    "node-linux": "*",
+    "node-mac": "*",
+    "node-windows": "*",
+    "npid": "*",
+    "openurl": "*",
+    "passport": "*",
+    "prompt": "*",
+    "rpid": "*",
+    "sails-disk": "*",
+    "ssh2": "*",
+    "superagent": "^2.1.0",
+    "term-spinner": "*",
+    "terminal-menu-program": "*",
+    "tree-kill": "*",
+    "unzip": "*",
+    "vinegar": "*",
+    "waterline": "*",
+    "weiv": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/active9/vehicle/issues"
+  },
+  "homepage": "https://github.com/active9/vehicle"
+}
