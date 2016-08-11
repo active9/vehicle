@@ -1,5 +1,5 @@
 {
-  "name": "Vehicle",
+  "name": "vehicle",
   "conical": "Tin Lizzie",
   "version": "0.1.0",
   "description": "ORM MVC with REST on Express",
