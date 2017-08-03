@@ -1,6 +1,6 @@
 module.exports = {
 
-	cors: true,
-	allRoutes: false
+  cors: true,
+  allRoutes: false
 
-}
+};

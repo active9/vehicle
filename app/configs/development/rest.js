@@ -1,5 +1,5 @@
 module.exports = {
 
-	rest: true
+  rest: true
 
-}
+};

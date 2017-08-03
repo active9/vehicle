@@ -13,4 +13,4 @@ module.exports = function (reg,orm,wc) {
   // Return Drivers
   return drivers;
 
-}
+};

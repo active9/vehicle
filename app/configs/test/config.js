@@ -1,5 +1,5 @@
 module.exports = {
 
-	port: 8088
+  port: 8088
 
-}
+};

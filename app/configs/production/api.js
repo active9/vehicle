@@ -1,5 +1,5 @@
 module.exports = {
-	public: true,
-	realm: "my realm",
-	secret: "SomeApiSecretHereForSalting"
-}
+  public: true,
+  realm: 'my realm',
+  secret: 'SomeApiSecretHereForSalting'
+};

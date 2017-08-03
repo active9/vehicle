@@ -9,4 +9,4 @@ module.exports = function (app,rc,express,weiv,orm,drivers,passport,__basedir) {
       res.redirect('/');
     }
   );
-}
+};

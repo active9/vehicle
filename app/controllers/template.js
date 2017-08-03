@@ -4,7 +4,7 @@
  */
 module.exports = {
   template: function(req, res) {
-    var template = "./views/index.html";
-    res.weiv.view(template, res, [{VEHICLE: "Vehicle"}]);
+    var template = './views/index.html';
+    res.weiv.view(template, res, [{VEHICLE: 'Vehicle'}]);
   }
 };

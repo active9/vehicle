@@ -1,5 +1,5 @@
 module.exports = {
 
-	openurl: false
+  openurl: false
 
-}
+};

@@ -1,5 +1,5 @@
 module.exports = {
 
-	cors: true
+  cors: true
 
-}
+};

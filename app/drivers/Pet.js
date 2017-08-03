@@ -1,7 +1,7 @@
 module.exports = function (orm,wc) {
 
-	// Pet Model
-	orm.loadCollection(wc.extend(require('../models/Pet.js')));
+  // Pet Model
+  orm.loadCollection(wc.extend(require('../models/Pet.js')));
 
-	return ; // Passenger Mode
-}
+  return ; // Passenger Mode
+};

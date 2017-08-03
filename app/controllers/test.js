@@ -3,6 +3,6 @@
  */
 module.exports = {
   test: function(req, res) {
-    res.json([{TEST: "Test"}]);
+    res.json([{TEST: 'Test'}]);
   }
 };

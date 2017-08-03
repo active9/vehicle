@@ -1,5 +1,5 @@
 module.exports = {
 
-	compress: false
+  compress: false
 
-}
+};

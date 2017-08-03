@@ -1,4 +1,4 @@
 module.exports = {
-	path: 'assets',
-	dir: 'assets'
-}
+  path: 'assets',
+  dir: 'assets'
+};

@@ -9,11 +9,11 @@ module.exports = function (drivers,orm,wc) {
     model: User.model,
     crud: User.crud,
     controller: User.controller
-  }
+  };
   drivers.user = user;
 
   // Pet Model (Unexposed Passenger Mode)
   var Pet = require('./Pet.js')(orm,wc);
 
   return drivers;
-}
+};

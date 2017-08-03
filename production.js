@@ -15,7 +15,7 @@ if (appdir === false) {
 //////////////////////////////////////////////////////////////////
 
 var config = require(appdir +'/configs/'+ process.env.NODE_ENV +'/config.js');
-GLOBAL.vehicle = {}
+global.vehicle = {}
 
 //////////////////////////////////////////////////////////////////
 // ENGINE MODULES
@@ -30,8 +30,8 @@ var util = require('util'),
   util.inherits(VehicleEmitter, EventEmitter);
   var vehicle = new VehicleEmitter();
   merge(vehicle,require(appdir +'/package.json'));
-  merge(GLOBAL.vehicle,vehicle);
-  GLOBAL.vehicle.emit('init');
+  merge(global.vehicle,vehicle);
+  global.vehicle.emit('init');
 
 var env = process.env.NODE_ENV,
   wheels = require(appdir +'/config.json'),
@@ -53,7 +53,7 @@ var env = process.env.NODE_ENV,
   passport = require('passport'),
   bodyParser = require('body-parser');
   app.server = server;
-  merge(GLOBAL.vehicle, {
+  merge(global.vehicle, {
     app: app,
     rc: rc,
     express: express,
@@ -129,8 +129,8 @@ if (config_cors.cors) {
 // APP DRIVER
 //////////////////////////////////////////////////////////////////
 
-require(appdir +"/"+GLOBAL.vehicle.main)(app,rc,express,weiv,orm,drivers,passport,appdir);
-GLOBAL.vehicle.emit('startup');
+require(appdir +"/"+global.vehicle.main)(app,rc,express,weiv,orm,drivers,passport,appdir);
+global.vehicle.emit('startup');
 
 //////////////////////////////////////////////////////////////////
 // REST API (Keys Required Mode)
@@ -143,6 +143,7 @@ if (config_api.public) {
         crud = drivers[driver].crud;
 
         app.get('/api/'+crud, function(req, res) {
+          console.log("TEST ::", crud);
           app.models[drivers[driver].model].find().exec(function(err, models) {
             if(err) return res.json({ err: err }, 500);
             res.json(models);
@@ -196,9 +197,9 @@ if (config_api.public) {
 
     // WAVE THE CHEQUERED FLAG!
     app.listen(config.port, function() {
-      GLOBAL.vehicle.app = app;
-      GLOBAL.vehicle.port = config.port;
-      GLOBAL.vehicle.emit('ready');
+      global.vehicle.app = app;
+      global.vehicle.port = config.port;
+      global.vehicle.emit('ready');
       console.log("Vehicle Listening On Port ", config.port);
     });
   });

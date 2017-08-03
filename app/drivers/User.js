@@ -7,5 +7,5 @@ module.exports = function (orm,wc) {
     model: 'user',
     crud: 'users',
     controller: 'users'
-  } // Driver Mode
-}
+  }; // Driver Mode
+};
